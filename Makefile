@@ -16,3 +16,9 @@ $(OBJ)/%.o: $(SRC)/%.c
 
 $(OBJ):
 	mkdir -p $(OBJ)
+
+.PHONY: clean
+
+clean:
+	rm $(OBJS)
+	rm $(BIN)
